@@ -12,6 +12,7 @@ class IncomeHeader extends StatelessWidget {
           'Income',
           style: AppStyles.styleSemiBold20,
         ),
+       const  Expanded(child: SizedBox()),
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
