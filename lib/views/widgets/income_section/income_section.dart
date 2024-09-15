@@ -1,5 +1,6 @@
 import 'package:admin_dashboard/views/widgets/custom_background_container.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_chart.dart';
+import 'package:admin_dashboard/views/widgets/income_section/income_details.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_header.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,10 @@ class IncomeSection extends StatelessWidget {
            IncomeHeader(),
           Expanded(
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(child: IncomeChart()),
+                Expanded(child: IncomeDetails()),
               ],
             ),
           ),
