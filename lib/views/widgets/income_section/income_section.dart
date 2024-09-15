@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/views/widgets/custom_background_container.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_header.dart';
 import 'package:flutter/material.dart';
 
@@ -6,10 +7,12 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-         IncomeHeader(),
-      ],
+    return const CustomBackgroundContainer(
+      child:  Column(
+        children: [
+           IncomeHeader(),
+        ],
+      ),
     );
   }
 }
