@@ -1,4 +1,4 @@
-import 'package:admin_dashboard/views/widgets/custom_background_container.dart';
+import 'package:admin_dashboard/utils/custom_background_container.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_chart.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_details.dart';
 import 'package:admin_dashboard/views/widgets/income_section/income_header.dart';
