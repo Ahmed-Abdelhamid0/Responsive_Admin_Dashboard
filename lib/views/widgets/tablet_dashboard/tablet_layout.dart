@@ -1,6 +1,9 @@
 import 'package:admin_dashboard/views/widgets/design_sections/all_expenses_and_quick_invoice.dart';
+import 'package:admin_dashboard/views/widgets/design_sections/my_card_and_transaction_section.dart';
 import 'package:admin_dashboard/views/widgets/drawer_section/custom_drawer.dart';
 import 'package:flutter/material.dart';
+
+import '../mobile_dashboard/mobile_layout.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
@@ -11,9 +14,16 @@ class TabletLayout extends StatelessWidget {
       children: [
         Expanded(child: CustomDrawer()),
         SizedBox(width: 32),
-        Expanded(child: AllExpensesAndQuickInvoice()),
+        Expanded(
+            flex: 3,
+            child: Padding(
+              padding: EdgeInsets.only(top: 40),
+              child: MobileLayout(),
+            )),
         SizedBox(width: 32),
       ],
     );
   }
 }
+
+
