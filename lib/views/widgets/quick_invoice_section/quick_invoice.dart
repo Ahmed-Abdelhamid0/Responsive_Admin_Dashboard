@@ -1,6 +1,6 @@
 import 'package:admin_dashboard/utils/custome_text_field.dart';
 import 'package:admin_dashboard/utils/title_text_field.dart';
-import 'package:admin_dashboard/views/widgets/custom_background_container.dart';
+import 'package:admin_dashboard/utils/custom_background_container.dart';
 import 'package:admin_dashboard/views/widgets/quick_invoice_section/latest_transaction.dart';
 import 'package:admin_dashboard/views/widgets/quick_invoice_section/quick_invoice_btns.dart';
 import 'package:admin_dashboard/views/widgets/quick_invoice_section/quick_invoice_form.dart';
