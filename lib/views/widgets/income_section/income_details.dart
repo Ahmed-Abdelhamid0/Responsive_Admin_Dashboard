@@ -29,6 +29,7 @@ static const List<IncomeModel> incomeList=[
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: incomeList.map((child)=>IncomeItem(incomeModel: child)).toList(),
     );
 
