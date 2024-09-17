@@ -28,12 +28,9 @@ static const List<IncomeModel> incomeList=[
 ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: incomeList.length,
-        itemBuilder: (context,index){
-        return IncomeItem(incomeModel: incomeList[index]);
-        },
+    return Column(
+      children: incomeList.map((child)=>IncomeItem(incomeModel: child)).toList(),
     );
+
   }
 }
