@@ -12,7 +12,7 @@ final DrawerItemModel drawerItemModel;
       leading: SvgPicture.asset(drawerItemModel.image),
       title: Text(
         drawerItemModel.title,
-        style: AppStyles.styleBold16,
+        style: AppStyles.styleBold16(context),
       ),
       trailing: Container(
         width: 3.27,

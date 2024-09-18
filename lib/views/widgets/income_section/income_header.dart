@@ -8,9 +8,9 @@ class IncomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Row(
       children: [
-       const Text(
+        Text(
           'Income',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
        const  Expanded(child: SizedBox()),
         Container(
@@ -24,9 +24,9 @@ class IncomeHeader extends StatelessWidget {
           ),
           child:  Row(
             children: [
-              const Text(
+               Text(
                 'Monthly',
-                style: AppStyles.styleMedium16,
+                style: AppStyles.styleMedium16(context),
               ),
               const  SizedBox(width: 18),
               Transform.rotate(

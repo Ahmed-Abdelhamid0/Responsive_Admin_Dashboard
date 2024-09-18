@@ -23,13 +23,13 @@ class MyCard extends StatelessWidget {
                 contentPadding: const EdgeInsets.only(top: 16,right: 45,left: 31),
                 title: Text(
                   'Bank Name',
-                  style: AppStyles.styleRegular16.copyWith(
+                  style: AppStyles.styleRegular16(context).copyWith(
                     color: const Color(0xffFFFFFF),
                   ),
                 ),
                 subtitle: Text(
                   'BANQUE MISR',
-                  style: AppStyles.styleMedium16.copyWith(
+                  style: AppStyles.styleMedium16(context).copyWith(
                     color: const Color(0xffFFFFFF),
                   ),
                 ),
@@ -43,13 +43,13 @@ class MyCard extends StatelessWidget {
                   children: [
                     Text(
                       '0918 8124 0042 8129',
-                      style: AppStyles.styleSemiBold24.copyWith(
+                      style: AppStyles.styleSemiBold24(context).copyWith(
                         color: const Color(0xffFFFFFF),
                       ),
                     ),
                     Text(
                       '12/20 - 124',
-                      style: AppStyles.styleRegular16.copyWith(
+                      style: AppStyles.styleRegular16(context).copyWith(
                         color: const Color(0xffFFFFFF),
                       ),
                     ),

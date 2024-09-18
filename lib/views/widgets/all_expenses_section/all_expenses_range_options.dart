@@ -7,7 +7,7 @@ class RangeOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(12),
+      padding: const  EdgeInsets.all(12),
       decoration: BoxDecoration(
        color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -17,9 +17,9 @@ class RangeOptions extends StatelessWidget {
       ),
       child:  Row(
         children: [
-          const Text(
+           Text(
             'Monthly',
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           const  SizedBox(width: 18),
           Transform.rotate(

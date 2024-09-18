@@ -11,7 +11,7 @@ final String hint;
         filled: true,
         fillColor: const Color(0xffFAFAFA),
         hintText: hint,
-        hintStyle: AppStyles.styleRegular16.copyWith(
+        hintStyle: AppStyles.styleRegular16(context).copyWith(
           color: const Color(0xffAAAAAA),
         ),
         border: buildBorder(),
