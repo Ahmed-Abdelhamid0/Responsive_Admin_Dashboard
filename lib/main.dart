@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(DevicePreview(
-      enabled: true, builder: (context) => const ResponsiveDashboard()));
+      enabled: false, builder: (context) => const ResponsiveDashboard()));
 }
 
 class ResponsiveDashboard extends StatelessWidget {
