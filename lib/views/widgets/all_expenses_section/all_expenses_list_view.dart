@@ -37,36 +37,42 @@ class _AllExpensesListViewState extends State<AllExpensesListView> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: expensesItems.asMap().entries.map((child) {
-       var item=child.value;
-       int index=child.key;
-       if(index==1){
-         return Expanded(
-             child: GestureDetector(
-               onTap: (){
-                 setState(() {
-                   selectedIndex = index;
-                 });
-               },
-               child: Padding(
-                   padding: const EdgeInsets.symmetric(horizontal: 12),
-                 child:  AllExpensesItem(allExpensesItemModel: item,isSelected: selectedIndex==index),
-               ),
-             ),
-         );
-       }else{
-         return Expanded(
-             child: GestureDetector(
-                 onTap: (){
-                   setState(() {
-                     selectedIndex = index;
-                   });
-                 },
-                 child: AllExpensesItem(
-                   allExpensesItemModel: item,isSelected: selectedIndex==index)));
-       }
-      }).toList(),
-    );
+      return Row(
+        children: [
+          Expanded(
+            child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  selectedIndex = 0;
+                });
+              },
+              child: AllExpensesItem(allExpensesItemModel: expensesItems[0],isSelected: selectedIndex==0),
+            ),
+          ),
+         const SizedBox(width: 8),
+          Expanded(
+            child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  selectedIndex = 1;
+                });
+              },
+              child: AllExpensesItem(allExpensesItemModel: expensesItems[1],isSelected: selectedIndex==1),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: GestureDetector(
+              onTap: (){
+                setState(() {
+                  selectedIndex = 2;
+                });
+              },
+              child: AllExpensesItem(allExpensesItemModel: expensesItems[2],isSelected: selectedIndex==2),
+            ),
+          ),
+        ],
+      );
+
   }
 }
